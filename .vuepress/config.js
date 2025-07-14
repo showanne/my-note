@@ -16,7 +16,7 @@ module.exports = {
       }
     ]
   ],
-  base: '/',
+  base: '/my-note/',
 
   themeConfig: {
     // Logo
