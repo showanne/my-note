@@ -15,7 +15,7 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: showanne/my-note
-          TARGET_BRANCH: main
+          TARGET_BRANCH: gh-pages
           BUILD_SCRIPT: yarn && yarn build
-          BUILD_DIR: .
-          CNAME: https://showanne.github.io/
+          BUILD_DIR: .vuepress/dist # 建置輸出目錄
+          # CNAME: https://showanne.github.io/
