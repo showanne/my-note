@@ -34,9 +34,9 @@ module.exports = {
     // 假如文檔在其他的分支下
     docsBranch: 'main',
     // 預設是 false，改為 true 就可以開啟這連結
-    editLinks: true,
+    editLinks: false,
     // 連結顯示的文字，預設為「Edit this page」
-    editLinkText: '修改此頁面',
+    // editLinkText: '修改此頁面',
 
     // 選單設定
     nav: [
@@ -53,6 +53,8 @@ module.exports = {
       copyright:
         'Anne | <a href="mailto:showanne.e@gmail.com" target="_blank">Contact</a>'
     },
+
+    subSidebar: 'auto',
 
     blogConfig: {
       category: {
