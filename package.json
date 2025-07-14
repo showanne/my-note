@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "description": "A blog powered by Anne",
+  "authors": {
+    "name": "Anne",
+    "email": "showanne.e@gmail.com"
+  },
   "scripts": {
     "serve": "vuepress dev .",
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "vuepress-theme-reco": "^1.6.17",
     "vuepress": "^1.9.10"
   }
 }
