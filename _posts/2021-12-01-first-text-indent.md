@@ -14,8 +14,9 @@ text-indent 的作用是設定文字首行縮排，其中設定的值主要是�
 可使用的單位：px、em(字元)、ex、vw、vh、cm、in、%。
 注意：若設定凸排要 padding-left 回來。
 
-> 範例：
-> ![](https://i.imgur.com/nLeAgvQ.png)
+範例：
+![](https://i.imgur.com/nLeAgvQ.png)
+
 > 範例中的 `text-indent: -25px;` = icon**16** + iconMargin**5** + spanPadding**4**
 > 範例中的 `.info {padding-left: 32px;}` = 原本的對齊**7** + text-indent**25**
 > 參考：[Text-indent - 金魚都能懂的 CSS 必學屬性](https://ithelp.ithome.com.tw/articles/10243388)
