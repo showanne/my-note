@@ -54,6 +54,9 @@ module.exports = {
         'Anne | <a href="mailto:showanne.e@gmail.com" target="_blank">Contact</a>'
     },
 
+    // 關閉 404 頁面 (腾讯公益)
+    noFoundPageByTencent: false,
+
     // 默認主題模式 - true 為顯示切換按鈕，false 為不顯示
     modePicker: false,
 
