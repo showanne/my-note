@@ -20,13 +20,13 @@ module.exports = {
 
   themeConfig: {
     // Logo
-    logo: './face.png',
+    logo: '/face.png',
     author: 'Anne',
-    authorAvatar: './face.png',
+    authorAvatar: '/face.png',
 
     // Repository 連結
     repo: 'showanne/my-note',
-    repoLabel: '本頁原始碼',
+    repoLabel: 'Source',
     // 假如文件檔的 Repository 跟上面設定的 repo 是不一樣的路徑：
     // docsRepo: 'showanne/my-note',
     // 假如文檔不是在 Repository 的根目錄下
@@ -53,6 +53,9 @@ module.exports = {
       copyright:
         'Anne | <a href="mailto:showanne.e@gmail.com" target="_blank">Contact</a>'
     },
+
+    // 默認主題模式 - true 為顯示切換按鈕，false 為不顯示
+    modePicker: false,
 
     subSidebar: 'auto',
 
