@@ -60,6 +60,9 @@ module.exports = {
     // 默認主題模式 - true 為顯示切換按鈕，false 為不顯示
     modePicker: false,
 
+    // 程式碼區塊的主題樣式
+    codeTheme: 'okaidia', // default 'tomorrow'
+
     subSidebar: 'auto',
 
     blogConfig: {
