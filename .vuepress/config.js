@@ -54,6 +54,26 @@ module.exports = {
     // 連結顯示的文字，預設為「Edit this page」
     // editLinkText: '修改此頁面',
 
+    // 預設的語系文字顯示
+    locales: {
+      '/': {
+        recoLocales: {
+          homeBlog: {
+            //   article: '美文', // 默認 文章
+            tag: '標籤', // 默認 标签
+            category: '分類' // 默認 分类
+            //   friendLink: '友链' // 默認 友情链接
+          },
+          pagation: {
+            prev: '上一頁',
+            next: '下一頁',
+            go: '前往',
+            jump: '跳至'
+          }
+        }
+      }
+    },
+
     // 選單設定
     nav: [
       { text: '首頁', link: '/' },
