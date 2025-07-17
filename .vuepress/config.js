@@ -2,6 +2,7 @@ module.exports = {
   lang: 'zh-TW',
   title: "Anne's Notes",
   description: "Anne's Notes Website",
+  base: '/my-note/',
   theme: 'reco',
 
   // 部落格類型
@@ -12,11 +13,26 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: 'https://raw.githubusercontent.com/showanne/showanne.github.io/master/src/Anne.jpg'
+        href: 'https://raw.githubusercontent.com/showanne/showanne.github.io/master/favicon.ico'
       }
-    ]
+    ],
+    // 優化手機板搜尋框放大後會失去焦點而可以左右滑動的效果
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,user-scalable=no'
+      }
+    ],
+    ['meta', { name: 'theme-color', content: '#551a8b' }]
+    // ['link', { rel: 'manifest', href: '/manifest.json' }],
+    // ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    // ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    // ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
+    // ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    // ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    // ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  base: '/my-note/',
 
   themeConfig: {
     // Logo
