@@ -17,8 +17,8 @@ tags:
 
 ### 作法：此時可以使用 `git worktree` 切換到 b 分支做調整。
 
-![git worktree 操作紀錄](https://hackmd.io/_uploads/H1pM3iXda.png)
-![git worktree 操作紀錄-2](https://hackmd.io/_uploads/r1x9BT4u0.png)
+![git worktree 操作紀錄](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_42988e355c38b3cd71ae5cd1db50ee72.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1752825441&Signature=ErCWzJ9X3NoQZvMAiqDHoaVJOS4%3D)
+![git worktree 操作紀錄-2](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_3db01e58f52613a073a376793045d106.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1752825493&Signature=%2F7F6yilr3%2Fp3zXBzuH1N3ct1zhE%3D)
 
 1. 先使用 `git worktree list` 確認目前使用的分支狀態「工作目錄」，正常狀態應該只會列出一個分支
 2. 再使用 `git worktree add` 建立第二個工作目錄
