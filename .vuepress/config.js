@@ -126,10 +126,5 @@ module.exports = {
     smoothScroll: true
   },
 
-  plugins: [
-    //   [
-    //     '@vuepress/google-analytics',
-    //     { 'ga': 'UA-74398300-1' }
-    //   ]
-  ]
+  plugins: [['@vuepress/google-analytics', { ga: 'G-10N6W54M7W' }]]
 }

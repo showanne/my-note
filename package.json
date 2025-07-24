@@ -13,7 +13,8 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
-    "vuepress-theme-reco": "^1.6.17",
-    "vuepress": "^1.9.10"
+    "@vuepress/plugin-google-analytics": "^1.9.10",
+    "vuepress": "^1.9.10",
+    "vuepress-theme-reco": "^1.6.17"
   }
 }
