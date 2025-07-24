@@ -16,6 +16,24 @@ module.exports = {
         href: 'https://raw.githubusercontent.com/showanne/showanne.github.io/master/favicon.ico'
       }
     ],
+    // Google tag
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-10N6W54M7W'
+      }
+    ],
+    [
+      'script',
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-10N6W54M7W');
+    `
+    ],
     // 優化手機板搜尋框放大後會失去焦點而可以左右滑動的效果
     [
       'meta',
@@ -124,7 +142,5 @@ module.exports = {
 
     // 頁面滾動效果
     smoothScroll: true
-  },
-
-  plugins: [['@vuepress/google-analytics', { ga: 'G-10N6W54M7W' }]]
+  }
 }
