@@ -38,3 +38,54 @@ Anne's 的個人技術部落格。
     yarn build
     ```
     建置完成的檔案會被輸出到 `.vuepress/dist` 目錄下。
+
+---
+
+## 功能：相關文章與繼續閱讀 (Feature: Related and Next Posts)
+
+本專案有一個自訂的 Vue 元件 `RelatedAndNextPosts`，可以在文章結尾顯示「相關文章」列表與「繼續閱讀」的單一連結。
+
+### 使用方法
+
+要在某篇文章啟用此功能，只需完成兩個步驟：
+
+1.  在該篇文章 `.md` 檔案的 `frontmatter` 區塊中，加入 `related` 或 `nextPost` 欄位。
+2.  在文章內容的最末端，加上 `<RelatedAndNextPosts />` 標籤。
+
+### Frontmatter 設定範例
+
+```yaml
+---
+title: '我的文章標題'
+date: 2026-01-01
+tags:
+  - tag
+# --- 開始設定 ---
+related:
+  - /_posts/2025-04-16-git-note.md
+  - /_posts/2024-01-04-git-worktree.md
+nextPost:
+  text: '下一篇要讀的文章標題'
+  link: '/_posts/2025-07-15-TypeScript-TypeGuard-OptionalChaining.md'
+# --- 結束設定 ---
+---
+這裡是您的文章正文...
+
+...文章內容結束。
+
+<RelatedAndNextPosts />
+```
+
+### 欄位說明
+
+- `related` (選填):
+
+  - **類型**: 陣列 (Array)
+  - **內容**: 一個或多個相關文章的路徑字串。
+  - **路徑格式**: 建議使用從根目錄開始的絕對路徑，並以 `.md` 結尾，例如 `/_posts/YYYY-MM-DD-some-post.md`。
+
+- `nextPost` (選填):
+  - **類型**: 物件 (Object)
+  - **內容**:
+    - `text`: 要顯示的連結文字。
+    - `link`: 指向下一篇文章的路徑字串，格式同上。
