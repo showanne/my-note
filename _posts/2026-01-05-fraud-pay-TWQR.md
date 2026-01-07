@@ -5,7 +5,7 @@ tags:
   - 詐騙
 nextPost:
   text: '接著了解一些零碎紀錄'
-  link: '/my-note/_posts/2026-01-07-fraud-pay-TWQR-2.html'
+  link: '/_posts/2026-01-07-fraud-pay-TWQR-2.html'
 ---
 
 ## 事情發生的經過

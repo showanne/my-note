@@ -5,7 +5,7 @@
       <h3>相關文章</h3>
       <ul>
         <li v-for="(post, index) in resolvedRelated" :key="index">
-          <a :href="post.path">{{ post.title }}</a>
+          <router-link :to="post.path">{{ post.title }}</router-link>
         </li>
       </ul>
     </div>
@@ -13,7 +13,7 @@
     <!-- Next Post Section -->
     <div v-if="nextPost" class="next-post-section">
       <h3>繼續閱讀</h3>
-      <a :href="nextPost.link">{{ nextPost.text }}</a>
+      <router-link :to="nextPost.link">{{ nextPost.text }}</router-link>
     </div>
   </div>
 </template>
